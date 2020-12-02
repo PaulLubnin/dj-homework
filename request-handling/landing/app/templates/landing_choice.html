@@ -10,23 +10,20 @@
 
       <!--   Icon Section   -->
       <div class="row">
-
-        <div>
-          <a href="{% url 'landing' %}">Просмотреть страницы</a>
-        </div>
-
         <div class="col s12 m6">
           <div class="icon-block">
             <h5 class="center">Оригинальный вариант</h5>
-
-            <p class="light">Количество переходов к количеству просмотров: {{ original_conversion }}</p>
+            <p class="light">
+                <a href="{% url 'landing' %}?ab-test-arg=original">Перейти на сайт!</a>
+            </p>
           </div>
         </div>
         <div class="col s12 m6">
           <div class="icon-block">
             <h5 class="center">Тестовый вариант</h5>
-
-            <p class="light">Количество переходов к количеству просмотров: {{ test_conversion }}</p>
+            <p class="light">
+                <a href="{% url 'landing' %}?ab-test-arg=test">Перейти на сайт!</a>
+            </p>
           </div>
         </div>
       </div>
