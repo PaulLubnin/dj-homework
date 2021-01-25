@@ -120,14 +120,14 @@ CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_CONFIGS = {
     'default': {
-        'toolbar': 'Basic',
+        'toolbar': 'full',
     },
 }
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'your secret key'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 try:
     from .settings_local import *
